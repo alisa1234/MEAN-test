@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <input [(ngModel)]="title" [ngModelOptions]="{standalone: true}" type="text" placeholder="Title">
+  <textarea [(ngModel)]="description" [ngModelOptions]="{standalone: true}"  placeholder="Description"></textarea>
+  <select [(ngModel)]="category" [ngModelOptions]="{standalone: true}">
+    <option value="1">Health</option>
+    <option value="2">Life</option>
+    <option value="3">Food</option>
+  </select>
+  <button type="submit" (click)="createNews(title,description,category)" routerLink="/">Send</button>
+</div>

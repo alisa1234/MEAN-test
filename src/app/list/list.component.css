@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.wrapper .active {
+    background-color: #0000cc;
+}
+span {
+    cursor:pointer;
+}
+.active {
+    background-color: yellow;
+}
