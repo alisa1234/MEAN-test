@@ -8,7 +8,7 @@ const MongoClient = require('mongodb').MongoClient;
 const connection = (closure) =
 >
 {
-    return MongoClient.connect('mongodb://alice:12345@ds113098.mlab.com:13098/meantest', (err, client) = > {
+    return MongoClient.connect('mongodb://XXXX@ds113098.mlab.com:13098/meantest', (err, client) = > {
             var Mydb = client.db('meantest');
 
     closure(Mydb);
